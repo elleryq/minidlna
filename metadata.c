@@ -846,7 +846,7 @@ GetVideoMetadata(const char *path, char *name)
 		else if( strcmp(ctx->iformat->name, "flv") == 0 )
 			xasprintf(&m.mime, "video/x-flv");
 		else if( strcmp(ctx->iformat->name, "rm") == 0 )
-			asprintf(&m.mime, "video/x-pn-realvideo");
+			xasprintf(&m.mime, "video/x-pn-realvideo");
 		if( m.mime )
 			goto video_no_dlna;
 
